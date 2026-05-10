@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación — Normich A.C.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label">Capacitación</p>
+      <h1>Calendario de cursos y talleres</h1>
+      <p>Formación especializada en inocuidad, buenas prácticas agrícolas y estándares de certificación internacional. Modalidad virtual y presencial.</p>
+      <div style="display:flex;gap:1rem;margin-top:1.5rem;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.8);font-size:0.88rem">
+          <span style="background:var(--gold);border-radius:4px;padding:2px 8px;font-size:0.7rem;font-weight:700;color:var(--green)">GLOBALG.A.P.</span>
+          <span>Instructor Registrado</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.8);font-size:0.88rem">
+          <span style="background:rgba(200,168,75,0.3);border:1px solid var(--gold);border-radius:4px;padding:2px 8px;font-size:0.7rem;font-weight:700;color:var(--gold)">PrimusGFS</span>
+          <span>Centro de Entrenamiento</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COURSES -->
+  <section>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem">
+        <div>
+          <p class="section-label reveal">Cursos disponibles</p>
+          <h2 class="section-title reveal">Calendario — Mayo / Junio 2026</h2>
+        </div>
+        <a href="contacto.html" class="btn-primary" style="background:var(--green);color:var(--white)">Inscribirse / Informes</a>
+      </div>
+
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="virtual">Virtual</button>
+        <button class="filter-btn" data-filter="presencial">Presencial</button>
+        <button class="filter-btn" data-filter="primusgfs">PrimusGFS</button>
+        <button class="filter-btn" data-filter="globalgap">GLOBALG.A.P.</button>
+        <button class="filter-btn" data-filter="haccp">HACCP</button>
+      </div>
+
+      <div class="card-grid card-grid-2" id="courses-grid">
+
+        <div class="course-card reveal" data-category="primusgfs virtual">
+          <span class="course-format format-virtual">Virtual</span>
+          <div class="course-title">Webinar Gratuito: ¿Qué hay de nuevo en PrimusGFS V4?</div>
+          <div class="course-meta">
+            <span>📅 3 de mayo, 2026</span>
+            <span>⏱ 10:00–11:30 AM · 1.5 hrs</span>
+            <span>👤 Ing. J. Antonio Villagómez</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price free">✓ GRATUITO</span>
+            <a href="contacto.html" class="btn-sm">Registrarme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="virtual haccp">
+          <span class="course-format format-virtual">Virtual</span>
+          <div class="course-title">Nueva SMETA V7: Laboral, Seguridad, Higiene, Ambiente y Ética Empresarial</div>
+          <div class="course-meta">
+            <span>📅 6–7 de mayo, 2026</span>
+            <span>⏱ 08:30–16:45 · 16 hrs</span>
+            <span>👤 IBI Hugo Ramos</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$3,650 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="primusgfs presencial">
+          <span class="course-format format-presencial">Presencial</span>
+          <div class="course-title">Actualización PrimusGFS V4 — Uruapan, Michoacán</div>
+          <div class="course-meta">
+            <span>📅 10 de mayo, 2026</span>
+            <span>⏱ 08:30–16:45 · 8 hrs</span>
+            <span>👤 Ing. J. Antonio Villagómez</span>
+            <span>📍 Uruapan, Mich.</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$2,650 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="haccp virtual">
+          <span class="course-format format-virtual">Virtual</span>
+          <div class="course-title">HACCP Avanzado: Verificación y Validación de PPRRs, PCCs y del Sistema HACCP</div>
+          <div class="course-meta">
+            <span>📅 13–14 de mayo, 2026</span>
+            <span>⏱ 08:30–16:45 · 16 hrs</span>
+            <span>👤 IBI Hugo Ramos</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$3,500 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="primusgfs virtual">
+          <span class="course-format format-virtual">Virtual</span>
+          <div class="course-title">Estándar PrimusGFS V3.2 — Curso completo</div>
+          <div class="course-meta">
+            <span>📅 18–19–20 de mayo, 2026</span>
+            <span>⏱ 08:30–17:00 · 24 hrs</span>
+            <span>👤 Ing. S. Karina Gutiérrez / Ing. J. A. Villagómez</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$7,350 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="primusgfs virtual">
+          <span class="course-format format-virtual">Virtual</span>
+          <div class="course-title">Auditor PrimusGFS V3.2</div>
+          <div class="course-meta">
+            <span>📅 24 de mayo, 2026</span>
+            <span>⏱ 08:30–17:00 · 8 hrs</span>
+            <span>👤 Ing. S. Karina Gutiérrez</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$3,550 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="primusgfs presencial">
+          <span class="course-format format-presencial">Presencial</span>
+          <div class="course-title">Actualización PrimusGFS V4 — Ciudad Guzmán, Jalisco</div>
+          <div class="course-meta">
+            <span>📅 29 de mayo, 2026</span>
+            <span>⏱ 08:30–16:45 · 8 hrs</span>
+            <span>👤 Ing. J. Antonio Villagómez</span>
+            <span>📍 Ciudad Guzmán, Jal.</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$2,650 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="globalgap virtual">
+          <span class="course-format format-virtual">Virtual</span>
+          <div class="course-title">GRASP V2 de GLOBALG.A.P.: Evaluación de las Prácticas Sociales en la Agricultura</div>
+          <div class="course-meta">
+            <span>📅 3 de junio, 2026</span>
+            <span>⏱ 08:30–16:45 · 8 hrs</span>
+            <span>👤 Ing. Marisol López</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$2,200 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-category="globalgap virtual">
+          <span class="course-format format-virtual">Virtual</span>
+          <div class="course-title">Estándar Produce Handling Assurance de GLOBALG.A.P. para Certificación de Empaques</div>
+          <div class="course-meta">
+            <span>📅 10 de junio, 2026</span>
+            <span>⏱ 08:30–16:45 · 8 hrs</span>
+            <span>👤 Ing. Marisol López</span>
+          </div>
+          <div class="course-bottom">
+            <span class="course-price">$3,000 <small style="font-size:0.7rem;font-weight:400">IVA inc.</small></span>
+            <a href="contacto.html" class="btn-sm">Inscribirme</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section-alt">
+    <div class="container" style="max-width:640px">
+      <p class="section-label reveal">Inscripciones e informes</p>
+      <h2 class="section-title reveal">¿Tienes dudas sobre algún curso?</h2>
+      <p class="section-sub reveal">Contáctanos directamente por WhatsApp o correo electrónico.</p>
+      <div class="card-grid card-grid-2 reveal" style="margin-top:2rem">
+        <div class="card">
+          <h3 style="font-size:1rem">Ing. Xitlaly Aguilar</h3>
+          <p><a href="https://wa.me/524522037960" style="color:var(--green-mid);text-decoration:none">📱 WhatsApp: 452 203 7960</a></p>
+          <p style="margin-top:0.3rem"><a href="mailto:aguilarcca08@gmail.com" style="color:var(--green-mid);text-decoration:none;font-size:0.85rem">aguilarcca08@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h3 style="font-size:1rem">Ing. Lourdes Macias</h3>
+          <p><a href="https://wa.me/524522488017" style="color:var(--green-mid);text-decoration:none">📱 WhatsApp: 452 248 8017</a></p>
+          <p style="margin-top:0.3rem"><a href="mailto:lourdescca07@gmail.com" style="color:var(--green-mid);text-decoration:none;font-size:0.85rem">lourdescca07@gmail.com</a></p>
+        </div>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-light);margin-top:1rem;text-align:center">Tel. general: <a href="tel:4525249397" style="color:var(--green-mid);text-decoration:none">452 524 9397</a></p>
+    </div>
+  </section>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>

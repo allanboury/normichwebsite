@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Normich A.C.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .info-item { display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+    .info-item:last-child { border-bottom: none; }
+    .info-icon { width: 40px; height: 40px; background: var(--cream-dark); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .info-label { font-size: 0.75rem; font-weight: 600; color: var(--text-light); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.25rem; }
+    .info-value { font-size: 0.92rem; color: var(--text); }
+    .info-value a { color: var(--green-mid); text-decoration: none; }
+    .info-value a:hover { color: var(--green); }
+    .map-embed { border-radius: 14px; overflow: hidden; border: 1px solid var(--border); margin-top: 1.5rem; }
+    .complaint-type { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.75rem; margin: 1.5rem 0; }
+    .complaint-btn { border: 1.5px solid var(--border); background: var(--white); border-radius: 10px; padding: 0.85rem 0.5rem; text-align: center; cursor: pointer; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+    .complaint-btn:hover, .complaint-btn.selected { border-color: var(--green); background: var(--cream); }
+    .complaint-btn .cb-icon { font-size: 1.4rem; margin-bottom: 0.3rem; }
+    .complaint-btn .cb-label { font-size: 0.78rem; font-weight: 500; color: var(--green); }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: 2rem; } }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label">Contacto</p>
+      <h1>Estamos para atenderte</h1>
+      <p>Cotizaciones, dudas sobre certificación, programación de inspecciones o análisis de laboratorio — escríbenos y te respondemos en menos de 24 horas hábiles.</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTACT -->
+  <section>
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="reveal">
+        <p class="section-label">Escríbenos</p>
+        <h2 class="section-title" style="margin-bottom:1.75rem">Envía un mensaje</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div class="form-group">
+            <label>Nombre completo</label>
+            <input type="text" placeholder="Juan Rodríguez">
+          </div>
+          <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" placeholder="Agro Ejemplo S.A.">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="juan@empresa.com.mx">
+        </div>
+        <div class="form-group">
+          <label>Teléfono (opcional)</label>
+          <input type="tel" placeholder="+52 452 000 0000">
+        </div>
+        <div class="form-group">
+          <label>Asunto</label>
+          <select>
+            <option value="">Selecciona un tema…</option>
+            <option>Cotización de inspección</option>
+            <option>Información sobre certificación</option>
+            <option>Análisis de laboratorio</option>
+            <option>Inscripción a capacitación</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea placeholder="Cuéntanos en qué podemos ayudarte…"></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center;border:none;cursor:pointer;font-size:0.95rem">Enviar mensaje</button>
+        <p style="font-size:0.78rem;color:var(--text-light);margin-top:0.75rem;text-align:center">Tu información es confidencial. No compartimos datos con terceros.</p>
+      </div>
+
+      <!-- INFO -->
+      <div class="reveal" style="transition-delay:0.15s">
+        <p class="section-label">Información de contacto</p>
+        <h2 class="section-title" style="margin-bottom:1.25rem">Encuéntranos</h2>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Dirección</div>
+            <div class="info-value">Uruapan, Michoacán, México</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <div class="info-label">Teléfono</div>
+            <div class="info-value"><a href="tel:4525249397">452 524 9397</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <div class="info-label">Correo electrónico</div>
+            <div class="info-value"><a href="mailto:info@normich.com.mx">info@normich.com.mx</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <div class="info-label">Horario de atención</div>
+            <div class="info-value">Lunes a viernes · 8:00 – 17:00 hrs</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📱</div>
+          <div>
+            <div class="info-label">WhatsApp — Capacitación</div>
+            <div class="info-value">
+              <a href="https://wa.me/524522037960">Ing. Xitlaly: 452 203 7960</a><br>
+              <a href="https://wa.me/524522488017">Ing. Lourdes: 452 248 8017</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60308.15!2d-102.0488!3d19.4202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e75fe5b8b2a73%3A0xd59c85dc99b27f61!2sUruapan%2C+Michoac%C3%A1n!5e0!3m2!1ses!2smx!4v1680000000000"
+            width="100%" height="220" style="border:0;display:block" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPLAINTS -->
+  <section class="section-alt" id="quejas">
+    <div class="container" style="max-width:820px">
+      <p class="section-label reveal">Sistema de atención</p>
+      <h2 class="section-title reveal">Quejas, sugerencias y apelaciones</h2>
+      <p class="section-sub reveal">Normich A.C. cuenta con un proceso formal de atención a quejas, sugerencias, apelaciones, denuncias y felicitaciones, de acuerdo con nuestro sistema de gestión acreditado. Toda comunicación es tratada con confidencialidad e imparcialidad.</p>
+
+      <div class="complaint-type reveal">
+        <div class="complaint-btn" onclick="this.classList.toggle('selected')">
+          <div class="cb-icon">📋</div>
+          <div class="cb-label">Queja</div>
+        </div>
+        <div class="complaint-btn" onclick="this.classList.toggle('selected')">
+          <div class="cb-icon">💡</div>
+          <div class="cb-label">Sugerencia</div>
+        </div>
+        <div class="complaint-btn" onclick="this.classList.toggle('selected')">
+          <div class="cb-icon">⚖️</div>
+          <div class="cb-label">Apelación</div>
+        </div>
+        <div class="complaint-btn" onclick="this.classList.toggle('selected')">
+          <div class="cb-icon">🚨</div>
+          <div class="cb-label">Denuncia</div>
+        </div>
+        <div class="complaint-btn" onclick="this.classList.toggle('selected')">
+          <div class="cb-icon">⭐</div>
+          <div class="cb-label">Felicitación</div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="form-group">
+          <label>Nombre (puede ser anónimo)</label>
+          <input type="text" placeholder="Opcional">
+        </div>
+        <div class="form-group">
+          <label>Correo electrónico (para seguimiento)</label>
+          <input type="email" placeholder="Opcional — para enviarte respuesta">
+        </div>
+        <div class="form-group">
+          <label>Descripción detallada</label>
+          <textarea style="min-height:140px" placeholder="Describe el caso con la mayor información posible: fechas, nombres, documentos relevantes…"></textarea>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+          <div style="font-size:0.82rem;color:var(--text-light)">
+            También puedes llamar al <a href="tel:53200" style="color:var(--green-mid);font-weight:600">53200</a> (línea de atención)
+          </div>
+          <button class="btn-primary" style="border:none;cursor:pointer">Enviar comunicación</button>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:1rem;background:var(--cream-dark);border-color:var(--border)">
+        <p style="font-size:0.85rem;color:var(--text-mid);line-height:1.7">
+          <strong style="color:var(--green)">Proceso de respuesta:</strong> Todas las comunicaciones son acusadas de recibo dentro de 3 días hábiles. La resolución se emite en un plazo máximo de 30 días hábiles, conforme a nuestro procedimiento documentado. En caso de apelaciones a decisiones de certificación, se constituye un comité independiente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
